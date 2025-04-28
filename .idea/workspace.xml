@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50cac94e-6e67-4031-9ea2-c4f981e87921" name="변경" comment="20250304 TEST &quot;hello&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/web/HelloControllerTest.java" afterDir="false" />
+    <list default="true" id="50cac94e-6e67-4031-9ea2-c4f981e87921" name="변경" comment="20250307 TEST &quot;Hello Controller&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/domain/posts/Posts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/domain/posts/PostsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/dto/HelloResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/web/dto/HelloResponseDtoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/25__3__4___12_00__________.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/25__3__4__오전_12_00,_업데이트_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/web/HelloControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/web/HelloControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +55,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,7 +72,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/jo0ozip/springboot-practice.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/jo0ozip/SpringBoot-practice.git&quot;,
     &quot;accountId&quot;: &quot;82eb17e0-56e8-4e04-bec8-202c1303160d&quot;
   }
 }</component>
@@ -71,6 +80,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -80,47 +92,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.HelloControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.HelloControllerTest.helloToreturn.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.my-springboot 빌드.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HelloControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HelloControllerTest.helloToreturn.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/kior/IdeaProjects/my-springboot/src/main/java/com/kior/blog/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.HelloControllerTest.executor": "Run",
+    "Gradle.HelloControllerTest.helloDtoreturn.executor": "Run",
+    "Gradle.HelloControllerTest.helloToreturn.executor": "Run",
+    "Gradle.HelloResponseDtoTest.lombok_option_test.executor": "Run",
+    "Gradle.PostsRepositoryTest.lookup_board.executor": "Run",
+    "Gradle.PostsRepositoryTest.게시글저장_불러오기.executor": "Run",
+    "Gradle.my-springboot 빌드.executor": "Run",
+    "JUnit.HelloControllerTest.executor": "Run",
+    "JUnit.HelloControllerTest.helloToreturn.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.Application.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/kior/IdeaProjects/my-springboot/src/main/java/com/kior/blog/Main.java",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/HelloController" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.HelloControllerTest">
-    <configuration name="HelloControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.PostsRepositoryTest.lookup_board">
+    <configuration name="HelloControllerTest.helloDtoreturn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -133,7 +149,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.kior.blog.springboot.web.HelloControllerTest&quot;" />
+            <option value="&quot;com.kior.blog.springboot.web.HelloControllerTest.helloDtoreturn&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -144,7 +160,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="HelloControllerTest.helloToreturn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HelloResponseDtoTest.lombok_option_test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -157,7 +173,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.kior.blog.springboot.web.HelloControllerTest.helloToreturn&quot;" />
+            <option value="&quot;com.kior.blog.springboot.web.dto.HelloResponseDtoTest.lombok_option_test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -168,36 +184,53 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="HelloControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="my-springboot.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kior.blog.springboot.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.kior.blog.springboot.web" />
-      <option name="MAIN_CLASS_NAME" value="com.kior.blog.springboot.web.HelloControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="PostsRepositoryTest.게시글저장_불러오기" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.kior.blog.springboot.domain.posts.PostsRepositoryTest.게시글저장_불러오기&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="HelloControllerTest.helloToreturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="my-springboot.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kior.blog.springboot.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.kior.blog.springboot.web" />
-      <option name="MAIN_CLASS_NAME" value="com.kior.blog.springboot.web.HelloControllerTest" />
-      <option name="METHOD_NAME" value="helloToreturn" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="PostsRepositoryTest.lookup_board" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.kior.blog.springboot.domain.posts.PostsRepositoryTest.lookup_board&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="my-springboot.main" />
@@ -214,19 +247,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.HelloControllerTest" />
-        <item itemvalue="JUnit.HelloControllerTest" />
-        <item itemvalue="JUnit.HelloControllerTest.helloToreturn" />
+        <item itemvalue="Gradle.PostsRepositoryTest.lookup_board" />
+        <item itemvalue="Gradle.PostsRepositoryTest.게시글저장_불러오기" />
         <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="Gradle.HelloControllerTest.helloToreturn" />
+        <item itemvalue="Gradle.HelloResponseDtoTest.lombok_option_test" />
+        <item itemvalue="Gradle.HelloControllerTest.helloDtoreturn" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
       </set>
     </attachedChunks>
   </component>
@@ -241,6 +274,17 @@
       <workItem from="1740466549761" duration="3694000" />
       <workItem from="1741009808669" duration="4957000" />
       <workItem from="1741187201897" duration="3750000" />
+      <workItem from="1741311197184" duration="909000" />
+      <workItem from="1741592052537" duration="3149000" />
+      <workItem from="1741704123502" duration="664000" />
+      <workItem from="1741704794861" duration="1880000" />
+      <workItem from="1741706687762" duration="255000" />
+      <workItem from="1742945867631" duration="1601000" />
+      <workItem from="1743996149330" duration="4500000" />
+      <workItem from="1745823909840" duration="3439000" />
+      <workItem from="1745827405180" duration="407000" />
+      <workItem from="1745828954164" duration="920000" />
+      <workItem from="1745838594498" duration="2431000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore revise">
       <option name="closed" value="true" />
@@ -258,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741014205794</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="20250307 TEST &quot;Hello Controller&quot;">
+      <option name="closed" value="true" />
+      <created>1741311500627</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741311500628</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +319,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=".gitignore revise" />
     <MESSAGE value="20250304 TEST &quot;hello&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="20250304 TEST &quot;hello&quot;" />
+    <MESSAGE value="20250307 TEST &quot;Hello Controller&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="20250307 TEST &quot;Hello Controller&quot;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
