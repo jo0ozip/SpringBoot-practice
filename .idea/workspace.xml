@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50cac94e-6e67-4031-9ea2-c4f981e87921" name="변경" comment="20250307 TEST &quot;Hello Controller&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/domain/posts/Posts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/domain/posts/PostsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/dto/HelloResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/web/dto/HelloResponseDtoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/25__3__4___12_00__________.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/25__3__4__오전_12_00,_업데이트_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch" beforeDir="false" />
+    <list default="true" id="50cac94e-6e67-4031-9ea2-c4f981e87921" name="변경" comment="ㅏ">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/service/PostsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/PostsApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/dto/PostsResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/dto/PostsSaveRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/dto/PostsUpdateRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/web/PostsApiControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/web/HelloControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/web/HelloControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/domain/posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/domain/posts/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +97,8 @@
     "Gradle.HelloControllerTest.helloDtoreturn.executor": "Run",
     "Gradle.HelloControllerTest.helloToreturn.executor": "Run",
     "Gradle.HelloResponseDtoTest.lombok_option_test.executor": "Run",
+    "Gradle.PostsApiControllerTest.Posts_등록된다.executor": "Run",
+    "Gradle.PostsApiControllerTest.executor": "Run",
     "Gradle.PostsRepositoryTest.lookup_board.executor": "Run",
     "Gradle.PostsRepositoryTest.게시글저장_불러오기.executor": "Run",
     "Gradle.my-springboot 빌드.executor": "Run",
@@ -135,8 +135,8 @@
       <recent name="$PROJECT_DIR$/src/HelloController" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PostsRepositoryTest.lookup_board">
-    <configuration name="HelloControllerTest.helloDtoreturn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="PostsApiControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -149,7 +149,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.kior.blog.springboot.web.HelloControllerTest.helloDtoreturn&quot;" />
+            <option value="&quot;com.kior.blog.springboot.web.PostsApiControllerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -160,7 +160,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="HelloResponseDtoTest.lombok_option_test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostsApiControllerTest.Posts_등록된다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -173,7 +173,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.kior.blog.springboot.web.dto.HelloResponseDtoTest.lombok_option_test&quot;" />
+            <option value="&quot;com.kior.blog.springboot.web.PostsApiControllerTest.Posts_등록된다&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -247,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Gradle.PostsApiControllerTest" />
+        <item itemvalue="Gradle.PostsApiControllerTest.Posts_등록된다" />
         <item itemvalue="Gradle.PostsRepositoryTest.lookup_board" />
         <item itemvalue="Gradle.PostsRepositoryTest.게시글저장_불러오기" />
-        <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="Gradle.HelloResponseDtoTest.lombok_option_test" />
-        <item itemvalue="Gradle.HelloControllerTest.helloDtoreturn" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +284,9 @@
       <workItem from="1745823909840" duration="3439000" />
       <workItem from="1745827405180" duration="407000" />
       <workItem from="1745828954164" duration="920000" />
-      <workItem from="1745838594498" duration="2431000" />
+      <workItem from="1745838594498" duration="4457000" />
+      <workItem from="1745844362908" duration="1000" />
+      <workItem from="1746710676784" duration="12132000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore revise">
       <option name="closed" value="true" />
@@ -310,17 +312,37 @@
       <option name="project" value="LOCAL" />
       <updated>1741311500628</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="20250428 TEST &quot;Set JPA init&quot;">
+      <option name="closed" value="true" />
+      <created>1745841442275</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745841442275</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=".gitignore revise" />
     <MESSAGE value="20250304 TEST &quot;hello&quot;" />
     <MESSAGE value="20250307 TEST &quot;Hello Controller&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="20250307 TEST &quot;Hello Controller&quot;" />
+    <MESSAGE value="20250428 TEST &quot;Set JPA init&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="20250428 TEST &quot;Set JPA init&quot;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
