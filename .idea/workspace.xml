@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50cac94e-6e67-4031-9ea2-c4f981e87921" name="변경" comment="ㅏ">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/service/PostsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/PostsApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/dto/PostsResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/dto/PostsSaveRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/web/dto/PostsUpdateRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/web/PostsApiControllerTest.java" afterDir="false" />
+    <list default="true" id="50cac94e-6e67-4031-9ea2-c4f981e87921" name="변경" comment="Create API">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/domain/BaseTimeEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/domain/posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kior/blog/springboot/domain/posts/Posts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/domain/posts/PostsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/web/PostsApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kior/blog/springboot/web/PostsApiControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +97,7 @@
     "Gradle.HelloResponseDtoTest.lombok_option_test.executor": "Run",
     "Gradle.PostsApiControllerTest.Posts_등록된다.executor": "Run",
     "Gradle.PostsApiControllerTest.executor": "Run",
+    "Gradle.PostsRepositoryTest.executor": "Run",
     "Gradle.PostsRepositoryTest.lookup_board.executor": "Run",
     "Gradle.PostsRepositoryTest.게시글저장_불러오기.executor": "Run",
     "Gradle.my-springboot 빌드.executor": "Run",
@@ -134,8 +133,12 @@
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/HelloController" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.kior.blog.springboot.domain.posts" />
+      <recent name="com.kior.blog.springboot.domain" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Gradle.PostsRepositoryTest">
     <configuration name="PostsApiControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -184,7 +187,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PostsRepositoryTest.게시글저장_불러오기" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostsRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -197,7 +200,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.kior.blog.springboot.domain.posts.PostsRepositoryTest.게시글저장_불러오기&quot;" />
+            <option value="&quot;com.kior.blog.springboot.domain.posts.PostsRepositoryTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -247,11 +250,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PostsRepositoryTest" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Gradle.PostsApiControllerTest" />
         <item itemvalue="Gradle.PostsApiControllerTest.Posts_등록된다" />
         <item itemvalue="Gradle.PostsRepositoryTest.lookup_board" />
-        <item itemvalue="Gradle.PostsRepositoryTest.게시글저장_불러오기" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +289,10 @@
       <workItem from="1745828954164" duration="920000" />
       <workItem from="1745838594498" duration="4457000" />
       <workItem from="1745844362908" duration="1000" />
-      <workItem from="1746710676784" duration="12132000" />
+      <workItem from="1746710676784" duration="12371000" />
+      <workItem from="1747116331377" duration="928000" />
+      <workItem from="1747898721436" duration="11000" />
+      <workItem from="1748389247099" duration="4803000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore revise">
       <option name="closed" value="true" />
@@ -320,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745841442275</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Create API">
+      <option name="closed" value="true" />
+      <created>1746724609084</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746724609084</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +356,9 @@
     <MESSAGE value="20250304 TEST &quot;hello&quot;" />
     <MESSAGE value="20250307 TEST &quot;Hello Controller&quot;" />
     <MESSAGE value="20250428 TEST &quot;Set JPA init&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="20250428 TEST &quot;Set JPA init&quot;" />
+    <MESSAGE value="ㅏ" />
+    <MESSAGE value="Create API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create API" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
